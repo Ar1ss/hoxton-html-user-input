@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <form>
+    <div class="container">
+      <div class="hey-there">
+        <h1>Hey there!</h1>
+
+        <label class="label" for="name">What's your name?</label>
+        <input class="box" type="text" placeholder="Enter your name" required/>
+
+        <label class="label" for="email">What's your email address</label>
+        <input class="box" type="mails" placeholder="Enter your email address" required>
+
+        <label class="label" for="service"
+          >What service are you looking for?</label
+        >
+        <select class="box" name="service" id="service" required>
+          <option value="">Choose a service</option>
+          <option value="daml">DAML</option>
+          <option value="idi">IDI</option>
+          <option value="manual">Manual</option>
+        </select>
+
+        <label class="label" for="service">What is your budget?</label>
+        <select class="box" name="budget" id="budget" required>
+          <option value="">Select budget</option>
+          <option value="100$">100$</option>
+          <option value="200$">200$</option>
+          <option value="300$">300$</option>
+        </select>
+
+        <label class="label" for="">Anything else you'd like to tell us</label>
+        <textarea class="box" required
+          name="else"
+          id="else"
+          cols=""
+          rows=""
+          placeholder="Your messege here..."
+        ></textarea>
+        
+
+        <label for="checkbox" class="checkbox">
+          <span>I agree with the T&Cs.</span>
+          <input type="checkbox" required />
+        </label>
+
+        <button>Submit</button>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
